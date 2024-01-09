@@ -1,0 +1,11 @@
+@font-face {font-family: myiranyekan; src: url(iranyekanwebregular.woff); font-weight: normal;}
+@font-face {font-family: myiranyekan; src: url(iranyekanwebbold.woff); font-weight: bold;}
+.reveal, .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal p, .reveal ul, .reveal ol {font-family: myiranyekan !important;}
+.reveal h1 {font-size: 2.5em;}
+.reveal h2 {font-size: 1.5em;}
+.reveal h3 {font-size: 1.2em;}
+.reveal ul {margin-top: 20px; font-size: 0.7em;}
+.reveal li {margin-top: 0.5em;}
+.reveal p {font-size: 0.7em;}
+.reveal img {border: 5px solid #000;}
+
