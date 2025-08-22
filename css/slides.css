@@ -8,4 +8,6 @@
 .reveal li {margin-top: 0.5em;}
 .reveal p {font-size: 0.7em;}
 .reveal img {border: 5px solid #000;}
-
+.reveal.rtl ul ul, .reveal.rtl ul ol, .reveal.rtl ol ol, .reveal.rtl ol ul {
+    margin-right: 40px;
+}
