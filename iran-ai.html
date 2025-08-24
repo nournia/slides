@@ -21,7 +21,7 @@
 			if(forgetPop){
 				forgetPop = false;
 			} else {
-				// parent.postMessage(event.target.location.href, "app://obsidian.md");
+				// // parent.postMessage(event.target.location.href, "");
 			}
         }
 		window.onpopstate = onPopState;
@@ -68,7 +68,7 @@
 			fitElements();
 			if (document.readyState === 'complete') {
 				if (window.location.href.indexOf("?export") != -1){
-					// parent.postMessage(event.target.location.href, "app://obsidian.md");
+					// // parent.postMessage(event.target.location.href, "");
 				}
 				if (window.location.href.indexOf("print-pdf") != -1){
 					let stateCheck = setInterval(() => {

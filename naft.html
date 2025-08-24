@@ -27,7 +27,7 @@
             if(forgetPop){
                 forgetPop = false;
             } else if( pageInIframe()) {
-                // parent.postMessage(event.target.location.href, "app://obsidian.md");
+                parent.postMessage(event.target.location.href, "");
             }
         }
         window.onpopstate = onPopState;
@@ -73,7 +73,7 @@
             fitElements();
             if (document.readyState === 'complete') {
                 if (pageInIframe() && window.location.href.indexOf("?export") != -1){
-                    // parent.postMessage(event.target.location.href, "app://obsidian.md");
+                    parent.postMessage(event.target.location.href, "");
                 }
                 if (window.location.href.indexOf("print-pdf") != -1){
                     let stateCheck = setInterval(() => {
@@ -476,7 +476,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 </style></head>
 
 <body class="has-dark-background reveal-viewport" style="transition: transform 0.8s; --slide-width: 960px; --slide-height: 700px; --slide-scale: 0.8900571428571428; --viewport-width: 1368px; --viewport-height: 649px;">
-    <div class="reveal slide rtl center focused has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="fade" data-navigation-mode="linear">
+    <div class="reveal slide rtl center focused has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="fade" data-navigation-mode="linear" style="">
         <div class="slides" style="width: 960px; height: 700px; inset: 50% auto auto 50%; transform: translate(-50%, -50%) scale(0.890057);"><section data-markdown="" data-markdown-parsed="true" class="drop present" style="top: 0px; display: block;"><!-- -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -507,7 +507,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 <li class="fragment" data-fragment-index="0">­<!-- -->ارزهای XAUT و PAXG با پشتوانه طلا</li>
 <li class="fragment" data-fragment-index="1">­<!-- -->ارز CRUDE OIL BRENT ارائه شده توسط شرکت Zedcex</li>
 <li class="fragment" data-fragment-index="2">­<!-- -->ارز Petro ارائه شده توسط دولت ونزوئلا<ul>
-<li class="fragment" data-fragment-index="3">­<!-- -->این دارایی امکان تحویل فیزیکی را نداشت و در نهایت شکست خورد.</li></ul></li></ul></div>
+<li class="fragment" data-fragment-index="3">­<!-- -->امکان تحویل فیزیکی نداشت و در نهایت شکست خورد.</li></ul></li></ul></div>
 
 
 
@@ -529,9 +529,10 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 <h2 id="تحویل-قرارداد-نفت">تحویل قرارداد نفت</h2>
 <ul>
 <li class="fragment" data-fragment-index="0">­<!-- -->تضمین مبادله رمزارز نفت با قرارداد آتی نفت<ul>
-<li class="fragment" data-fragment-index="1">­<!-- -->قرارداد نفت با تاریخ تحویل کمتر از ۲ ماه آینده</li></ul></li></ul></div>
-
-
+<li class="fragment" data-fragment-index="1">­<!-- -->قرارداد نفت با تاریخ تحویل کمتر از ۲ ماه آینده</li>
+</ul>
+</li>
+<li class="fragment" data-fragment-index="2">­<!-- -->حسابرسی مستقل برای جلب اعتماد کاربران</li></ul></div>
 
 </section><section data-markdown="" data-markdown-parsed="true" class="drop past" style="top: 350px; display: none;" hidden="" aria-hidden="true"><!-- -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
@@ -553,7 +554,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
 <h2 id="بازاریابی-شبکه-اجتماعی">بازاریابی شبکه اجتماعی</h2>
 <ul>
-<li>بشکه نفت یک دارایی ایرانی کاملا قابل فهم برای مردم<ul>
+<li>بشکه نفت دارایی ایرانی کاملا قابل فهم برای مردم<ul>
 <li>بورس هنوز هم تخصصی و پیچیده است</li>
 </ul>
 </li>
@@ -585,9 +586,9 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
 <h2 id="اندازه-بازار">اندازه بازار</h2>
 <ul>
-<li class="fragment" data-fragment-index="0">­<!-- -->با فرض سرمایه‌گذاری ۱۰ میلیون نفر در این دارایی</li>
-<li class="fragment" data-fragment-index="1">­<!-- -->با فرض متوسط سرمایه‌گذاری ۲۰۰ دلاری سالانه هر نفر</li>
-<li class="fragment" data-fragment-index="2">­<!-- -->اندازه بازار ۲ میلیارد دلار در سال</li></ul></div>
+<li class="fragment" data-fragment-index="0">­<!-- -->تخمین محافظه‌کارانه: ۱ میلیون کاربر × ۱۰۰ دلار = سالانه <strong>۱۰۰ میلیون دلار</strong> </li>
+<li>تخمین متوسط: ۵ میلیون کاربر × ۲۰۰ دلار = سالانه <strong>۱ میلیارد دلار</strong></li>
+<li>تخمین خوش‌بینانه: ۱۰ میلیون کاربر × ۲۰۰ دلار = سالانه <strong>۲ میلیارد دلار</strong></li></ul></div>
 
 </section><section data-markdown="" data-markdown-parsed="true" class="drop past" style="top: 350px; display: none;" hidden="" aria-hidden="true"><!-- -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
@@ -610,9 +611,36 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 <ul>
 <li class="fragment" data-fragment-index="0">­<!-- -->سال اول: <strong>۱۰ هزار</strong> کاربر فعال، <strong>۲ میلیون</strong> دلار حجم معاملات</li>
 <li class="fragment" data-fragment-index="1">­<!-- -->سال دوم: <strong>۱۰۰ هزار</strong> کاربر فعال، <strong>۲۰ میلیون</strong> دلار حجم معاملات</li>
-<li class="fragment" data-fragment-index="2">­<!-- -->سال سوم: <strong>۲۰۰ هزار</strong> کاربر فعال، <strong>۴۰ میلیون</strong> دلار حجم معاملات</li>
-<li class="fragment" data-fragment-index="3">­<!-- -->سال چهارم: <strong>۵۰۰ هزار</strong> کاربر فعال، <strong>۱۰۰ میلیون</strong> دلار حجم معاملات</li>
-<li class="fragment" data-fragment-index="4">­<!-- -->سال پنجم: <strong>۱ میلیون</strong> کاربر فعال، <strong>۲۰۰ میلیون</strong> دلار حجم معاملات</li></ul></div>
+<li class="fragment" data-fragment-index="2">­<!-- -->سال سوم: <strong>۵۰۰ هزار</strong> کاربر فعال، <strong>۱۰۰ میلیون</strong> دلار حجم معاملات</li>
+<li class="fragment" data-fragment-index="3">­<!-- -->سال چهار: <strong>۱ میلیون</strong> کاربر فعال، <strong>۲۰۰ میلیون</strong> دلار حجم معاملات</li></ul></div>
+
+</section><section data-markdown="" data-markdown-parsed="true" class="drop past" style="top: 350px; display: none;" hidden="" aria-hidden="true"><!-- -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<h2 id="پرداخت-یارانه-با-دارایی-نفت">پرداخت یارانه با دارایی نفت</h2>
+<ul>
+<li class="fragment" data-fragment-index="0">­<!-- -->فواید حذف یارانه بنزین<ul>
+<li class="fragment" data-fragment-index="1">­<!-- -->عدالت در توزیع یارانه</li>
+<li class="fragment" data-fragment-index="2">­<!-- -->کاهش مصرف و قاچاق سوخت</li>
+</ul>
+</li>
+<li class="fragment" data-fragment-index="3">­<!-- -->امکان نگهداری و یا فروش به قیمت روز</li></ul></div>
+
+</section><section data-markdown="" data-markdown-parsed="true" class="drop past" style="top: 350px; display: none;" hidden="" aria-hidden="true"><!-- -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<h2 id="افزایش-فروش-نفت-ایران">افزایش فروش نفت ایران</h2>
+<ul>
+<li class="fragment" data-fragment-index="0">­<!-- -->فروش نفت ارزان‌تر از بازار جهانی</li>
+<li class="fragment" data-fragment-index="1">­<!-- -->قیمت بنزین در جهان تقریبا ۱.۲ دلار و در ایران تقریبا ۰.۰۲ دلار<ul>
+<li class="fragment" data-fragment-index="2">­<!-- -->تقریبا ۹۸٪ تخفیف</li>
+<li class="fragment" data-fragment-index="3">­<!-- -->در سال ۱۴۰۳ تقریبا ۴۵ میلیارد لیتر</li>
+</ul>
+</li>
+<li class="fragment" data-fragment-index="4">­<!-- -->فروش نفت با ۵٪ تخفیف با هدف افزایش ۱۰٪ فروش نفت کشور<ul>
+<li class="fragment" data-fragment-index="5">­<!-- -->شبیه فروش خودروهای داخلی</li></ul></li></ul></div>
+
+
 
 </section><section data-markdown="" data-markdown-parsed="true" class="drop past" style="top: 350px; display: none;" hidden="" aria-hidden="true"><!-- -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
@@ -624,10 +652,10 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 <li class="fragment" data-fragment-index="2">­<!-- -->مثل برق و محصولات کشاورزی</li>
 </ul>
 </li>
-<li class="fragment" data-fragment-index="3">­<!-- -->وام‌های با پشتوانه نفت</li></ul></div>
+<li class="fragment" data-fragment-index="3">­<!-- -->وام‌های با پشتوانه نفت و ...</li></ul></div>
 
 </section></div>
-    <div class="backgrounds"><div class="slide-background drop present" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background drop past" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background drop past" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div></div><div class="slide-number" style="display: none;"></div><aside class="controls" data-controls-layout="bottom-right" data-controls-back-arrows="faded" style="display: block;"><button class="navigate-left enabled highlight" aria-label="next slide"><div class="controls-arrow"></div></button>
+    <div class="backgrounds"><div class="slide-background drop present" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background drop past" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background drop past" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background drop past" style="display: none;"><div class="slide-background-content"></div></div></div><div class="slide-number" style="display: none;"></div><aside class="controls" data-controls-layout="bottom-right" data-controls-back-arrows="faded" style="display: block;"><button class="navigate-left enabled highlight" aria-label="next slide"><div class="controls-arrow"></div></button>
 			<button class="navigate-right" aria-label="previous slide" disabled="disabled"><div class="controls-arrow"></div></button>
 			<button class="navigate-up" aria-label="above slide" disabled="disabled"><div class="controls-arrow"></div></button>
 			<button class="navigate-down" aria-label="below slide" disabled="disabled"><div class="controls-arrow"></div></button></aside><div class="progress" style="display: block;"><span style="transform: scaleX(0);"></span></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"><button class="resume-button">Resume presentation</button></div><div class="aria-status" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">فروش نفت به مردم ایران </div></div>
